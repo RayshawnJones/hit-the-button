@@ -1,0 +1,33 @@
+body { /* Body */
+    font-family: Arial, sans-serif;
+    padding: 20px; /* Padding */
+    background-color: whitesmoke; /* Background color */
+}
+
+button {
+    padding: 10px 20px; /* Padding */ 
+    display: inline-block; /* Block element */
+    font-size: 20px;
+    color: white;   /* Text color */
+    background-color: #007BFF; /* Blue */
+    border: none; /* No border */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+button:hover { /* Hover effect */
+    background-color: #0056b3;
+}
+
+p { /* Paragraph */
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px; /* Margin top */ 
+}
+
+h1 { /*  Heading 1 */
+    font-size: 24px;
+    color: black;
+    margin-bottom: 10px;
+}
