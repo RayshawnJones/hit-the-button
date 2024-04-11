@@ -2,6 +2,9 @@ body { /* Body */
     font-family: Arial, sans-serif;
     padding: 20px; /* Padding */
     background-color: whitesmoke; /* Background color */
+    justify-content: center; /* Center content */
+    align-items: center; /* Center content */
+    flex-direction: column;
 }
 
 button {
@@ -31,3 +34,4 @@ h1 { /*  Heading 1 */
     color: black;
     margin-bottom: 10px;
 }
+
