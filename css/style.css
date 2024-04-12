@@ -1,11 +1,12 @@
+
+
+
 body { /* Body */
     font-family: Arial, sans-serif;
     padding: 20px; /* Padding */
     background-color: whitesmoke; /* Background color */
-    justify-content: center; /* Center content */
-    align-items: center; /* Center content */
-    flex-direction: column;
-}
+    display: center;
+}    
 
 button {
     padding: 10px 20px; /* Padding */ 
@@ -17,21 +18,44 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease; /* Smooth transition */
-}
+    justify-content: center; /* Center content */
+    align-items: center; /* Center content */
+    flex-direction: column;
+    font-weight: 400, 700; /* Font weight */
+}    
 
 button:hover { /* Hover effect */
     background-color: #0056b3;
-}
+}    
 
 p { /* Paragraph */
     font-size: 18px;
     color: #333;
     margin-top: 20px; /* Margin top */ 
-}
+}    
 
 h1 { /*  Heading 1 */
     font-size: 24px;
     color: black;
     margin-bottom: 10px;
-}
+    justify-content: center; /* Center content */
+    align-items: center; /* Center content */
+    flex-direction: column;
+    font-weight: 400, 700; /* Font weight */
+    
+}    
 
+.container{
+    width: 320px;
+    height: 497px;
+    background: white;
+    box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    content: center;
+    justify-content: center; /* Center content */
+    align-items: center; /* Center content */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
