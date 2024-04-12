@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         const audio = document.createElement('audio');
 
         // Set the source of the audio file
-        audio.src = './assets/jumpscare-154489.mp3';
+        audio.src = './assets/audio/jumpscare-154489.mp3';
 
         // Play the audio when the button is clicked
         audio.play();
