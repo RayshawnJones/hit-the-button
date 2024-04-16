@@ -24,6 +24,12 @@ const handleClick = () => { // Function to handle the button click
         const image = document.createElement('img');// Create an image element
         image.src = 'assets/images/evilcookiemonster.png';// Set the source of the image file
         document.body.appendChild(image);// Append the image to the body element
+
+        // Remove the initial image
+        const initialImage = document.querySelector('img[src="assets/images/cookie-monster.jpg"]');
+        if (initialImage) {
+            initialImage.remove();
+        }
     });
 
     // Set the initial image source
@@ -31,27 +37,4 @@ const handleClick = () => { // Function to handle the button click
     image.src = 'assets/images/cookie-monster.jpg';// Set the source of the image file
     document.body.appendChild(image);// Append the image to the body element
 };
-
-// Initialize click count
-let clickCount = 0;
-
-newButton.addEventListener('click', () => {
-    clickCount++; // Increment click count on each click
-
-    if (clickCount === 2) {
-        // Hide the initial image on the second click
-        const initialImage = document.querySelector('img[src="assets/images/cookie-monster.jpg"]');
-        if (initialImage) {
-            initialImage.style.display = 'none';
-        }
-    }
-
-    const audio = document.createElement('audio');
-    audio.src = 'assets/audio/jumpscare-154489.mp3';
-    audio.play();
-
-    const image = document.createElement('img');
-    image.src = 'assets/images/evilcookiemonster.png';
-    document.body.appendChild(image);
-});
 button.addEventListener('click', handleClick);// Add an event listener to the button
