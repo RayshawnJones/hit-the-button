@@ -1,85 +1,73 @@
-@keyframes fadeIn {
-    from {background-color: whitesmoke}
-    to {background-color: black;}
+body, html{
+    margin: 0;
+    padding: 0;
 }
 
-.box-animation {
-    animation-name: change-color;
-    animation-duration: 4s;
+body{
+    background-color: hsl(212, 45%, 89%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-
-
-
-
-body { /* Body */
-    font-family: Arial, sans-serif;
-    padding: 20px; /* Padding */
-    background-color: whitesmoke; /* Background color */
-    display: center;
-}    
-
-button {
-    padding: 10px 20px; /* Padding */ 
-    display: inline-block; /* Block element */
-    font-size: 20px;
-    color: white;   /* Text color */
-    background-color: #007BFF; /* Blue */
-    border: none; /* No border */
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth transition */
-    justify-content: center; /* Center content */
-    align-items: center; /* Center content */
-    flex-direction: column;
-    font-weight: 400, 700; /* Font weight */
-}    
-
-button:hover { /* Hover effect */
-    background-color: #0056b3;
-    flex-direction: column;
-}    
-
-p { /* Paragraph */
-    font-size: 18px;
-    color: #333;
-    margin-top: 20px; /* Margin top */ 
-    flex-direction: column;
-}    
-
-h1 { /*  Heading 1 */
-    font-size: 24px;
-    color: black;
-    margin-bottom: 10px;
-    justify-content: center; /* Center content */
-    align-items: center; /* Center content */
-    flex-direction: column;
-    font-weight: 400, 700; /* Font weight */
-    flex-direction: column;
+.card{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    box-shadow: 0px 25px 25px 0px   rgba(0,0,0.5);
+    padding: 16px 16px 40px;
+    text-align: center;
+    max-width: 320px;
     
-}    
-
-.container{
-    width: 320px;
-    height: 497px;
-    background: white;
-    box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.05);
-    border-radius: 20px;
-    content: center;
-    justify-content: center; /* Center content */
-    align-items: center; /* Center content */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    flex-direction: column;
 }
-
-.container img {
+.card-img{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+.card-title{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: normal;
+    color: hsl(218, 44%, 22%);
+    margin-bottom: 16px;
+    max-width: 270px;
 }
 
+.card-paragraph{
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: normal;
+    color: hsl(220, 15%, 55%);
+    max-width: 256px;
+}
 
+.myButton{
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.myButton:hover{
+    background-color: hsl(180, 66%, 59%);
+}
+
+.myButton:active{
+    background-color: hsl(180, 66%, 39%);
+}
+
+.myButton img{
+    display: none;
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+    alt: "Loading icon";
+}
+.myButton.loading img{
+    display: inline-block;
+}
