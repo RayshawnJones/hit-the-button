@@ -1,3 +1,8 @@
+// The JavaScript code manipulates the Document Object Model (DOM) and handles events. It starts by selecting a button with the id 'myButton' and then defines a function called 'handleClick' to execute a series of actions when the button is clicked. These actions include logging a message to the console, removing an 'h1' element if it exists, creating a new button, adding an event listener to the new button, and creating and appending image and audio elements. Finally, the handleClick function is assigned as the event handler for the original button's 'click' event.
+
+
+
+
 // Selects first button
 const button = document.getElementById('myButton');
 
