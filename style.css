@@ -1,7 +1,9 @@
-body, html{
+body, html{ /* Reset CSS */
     margin: 0;
     padding: 0;
 }
+
+/*style the body element. The background-color will be set using the hsl color model and the height will be set to 100vh, which means that it will occupy 100% of the viewport height. The display property will be set to flex, which will make the direct children of the body into flex items. The justify-content and align-items properties will be set to center, which will center the flex items both horizontally and vertically. */
 
 body{
     background-color: hsl(212, 45%, 89%);
@@ -10,64 +12,35 @@ body{
     justify-content: center;
     align-items: center;
 }
-.card{
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 20px;
-    box-shadow: 0px 25px 25px 0px   rgba(0,0,0.5);
-    padding: 16px 16px 40px;
-    text-align: center;
-    max-width: 320px;
-    
-}
-.card-img{
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 24px;
-}
-.card-title{
-    font-size: 22px;
-    font-weight: 700;
-    line-height: normal;
-    color: hsl(218, 44%, 22%);
-    margin-bottom: 16px;
-    max-width: 270px;
-}
 
-.card-paragraph{
-    font-size: 1.375rem;
-    font-weight: 400;
-    line-height: normal;
-    color: hsl(220, 15%, 55%);
-    max-width: 256px;
-}
+/* class called .myButton. The background-color will be set using the hsl color model and the text color will be set to white. The padding will be set to 12px on the top and bottom and 24px on the left and right. The border-radius will be set to 6px to create a button with rounded corners. The font-size and font-weight properties will be used to style the text. The cursor property will be set to pointer to change the mouse cursor to a pointer when hovering over the button. The transition property will be used to animate changes to the background-color over a duration of 0.1s using an ease timing function. The border will be set to none to remove the default button border.*/
 
 .myButton{
-    background-color: hsl(180, 66%, 49%);
+    background-color: hsl(180, 66%, 49%);/* Color */
     color: white;
     padding: 12px 24px;
     border-radius: 6px;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.1s ease;
     border: none;
 }
-
-.myButton:hover{
-    background-color: hsl(180, 66%, 59%);
+/* media query that applies styles only to screens and only to devices with specific characteristics that match those of an iPhone X. The styles will only apply to devices with a screen width between 375px and 812px using the min-device-width and max-device-width properties. The -webkit-min-device-pixel-ratio property will be used to apply the styles only to devices with a minimum pixel ratio of 3. Inside this media query, the p elements will be styled with a font-size of 16px and a text color of blue. */
+@media only screen /* Iphone X
+and (min-device-width: 375px) /* Iphone X */
+and (max-device-width: 812px) /* Iphone X*/
+and (-webkit-min-device-pixel-ratio: 3) { 
+    p {
+        font-size: 16px;
+        color: blue;
+    }
 }
-
-.myButton:active{
-    background-color: hsl(180, 66%, 39%);
-}
-
-.myButton img{
-    display: none;
-    width: 20px;
-    height: 20px;
-    margin-left: 8px;
-    alt: "Loading icon";
-}
-.myButton.loading img{
-    display: inline-block;
-}
+/* Pseudo-code: IF screen is an iPhone X
+    AND minimum device width is 375px
+    AND maximum device width is 812px
+    AND webkit minimum device pixel ratio is 3
+THEN
+    SET font size of all <p> elements to 16px
+    SET color of all <p> elements to blue
+ENDIF */
