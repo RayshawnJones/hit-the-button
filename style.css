@@ -6,10 +6,10 @@ body, html{ /* Reset CSS */
 /*style the body element. The background-color will be set using the hsl color model and the height will be set to 100vh, which means that it will occupy 100% of the viewport height. The display property will be set to flex, which will make the direct children of the body into flex items. The justify-content and align-items properties will be set to center, which will center the flex items both horizontally and vertically. */
 
 body{
-    background-color: hsl(212, 45%, 89%);
-    height: 100vh;
-    display: flex;
-    flex-direction: column-reverse;
+    background-color: hsl(212, 45%, 89%); 
+    height: 100vh; /* The height property is used to set the height of an element. The value 100vh will set the height of the body to 100% of the viewport height. */
+    display: flex; /* The display property is used to specify the type of box model used for an element. The value flex will make the direct children of the body into flex items. */
+    flex-direction: column-reverse; /* The flex-direction property is used to specify the direction in which the flex items are placed in the flex container. The value column-reverse will place the flex items in a column from bottom to top. */
     justify-content: center;
     align-items: center;
 }
@@ -19,9 +19,9 @@ body{
 
 
 /* media query that applies styles only to screens and only to devices with specific characteristics that match those of an iPhone X. The styles will only apply to devices with a screen width between 375px and 812px using the min-device-width and max-device-width properties. The -webkit-min-device-pixel-ratio property will be used to apply the styles only to devices with a minimum pixel ratio of 3. Inside this media query, the p elements will be styled with a font-size of 16px and a text color of blue. */
-@media only screen /* Iphone X
-and (min-device-width: 375px) /* Iphone X */
-and (max-device-width: 812px) /* Iphone X*/
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 812px) 
 and (-webkit-min-device-pixel-ratio: 3) { 
     p {
         font-size: 16px;
